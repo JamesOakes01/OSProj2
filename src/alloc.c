@@ -137,7 +137,9 @@ void *coalesce(free_block *block) {
  * @return A pointer to the allocated memory
  */
 void *do_alloc(size_t size) {
-    return NULL;
+    //return NULL;
+    void *ptr = sbrk(size); //stores the pointer from sbrk into a variable of type void called ptr
+    return ptr; //returns the pointer
 }
 
 /**
