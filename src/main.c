@@ -241,7 +241,7 @@ int main(int argc, char** argv) {
         printf("Failed to allocate memory\n");
         return 1;
     }
-
+    
     // Set some values in the allocated memory
     for(int i=10; i<20; i++) {
         bigger_things[i] = i*10;
@@ -254,6 +254,5 @@ int main(int argc, char** argv) {
 
     // Free the allocated memory
     tufree(more_things);
-
     return 0;
 }
